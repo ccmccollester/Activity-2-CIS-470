@@ -102,7 +102,7 @@
                 upperLimit = Math.min(bracket.upperBound, taxableIncome);
             }
 
-            const taxableAmount = upperLimit + bracket.lowerBound;
+            const taxableAmount = upperLimit - bracket.lowerBound;
 
             totalTax += taxableAmount * bracket.rate;
 
